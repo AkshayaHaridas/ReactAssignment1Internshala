@@ -1,0 +1,127 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.page {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(28, 28, 109);
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 16%;
+  color: aliceblue;
+}
+.itemsWithInput {
+  box-shadow: 1px 1px 10px 5px rgb(180, 196, 219);
+  height: 78%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: white;
+}
+.addItem {
+  padding-top: 2%;
+  width: 100%;
+  height: 13%;
+  gap: 2%;
+  display: flex;
+  justify-content: center;
+}
+button {
+  width: 12%;
+  height: 70%;
+  align-self: center;
+  color: white;
+  background-color: rgb(176, 40, 54);
+  font-weight: 700;
+  border: 2px solid rgb(229, 103, 103);
+}
+button:hover {
+  border: 0px solid rgb(231, 96, 96);
+}
+button:active {
+  border: 1px solid rgb(223, 127, 127);
+}
+input[type="text"] {
+  width: 70%;
+  padding: 2%;
+  font-size: larger;
+  background-color: aliceblue;
+  border: 2px solid rgb(171, 59, 59);
+}
+input[type="text"]:focus {
+  background-color: white;
+
+  border: 2px solid rgb(255, 255, 255);
+  outline: 2px solid rgb(219, 163, 163);
+}
+ul {
+  padding-top: 6%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  overflow-y: scroll;
+}
+li {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  grid-auto-rows: 59px;
+  width: 85%;
+}
+.item {
+  display: flex;
+  grid-column: span 10;
+  font-size: 18px;
+}
+.item .number {
+  font-weight: 600;
+}
+.item .displayItem {
+  padding-left: 3%;
+}
+.checkBox {
+  grid-column: span 4;
+}
+.checkBoxStyle {
+  width: 80px;
+  height: 20px;
+}
+.editDiv {
+  grid-column: span 2;
+}
+.editIcon {
+  font-size: 20px;
+  color: rgb(64, 86, 146);
+}
+.editIcon:hover {
+  color: rgb(27, 43, 90);
+}
+.trashDiv {
+  grid-column: span 2;
+}
+.trashIcon {
+  font-size: 20px;
+  color: rgb(228, 81, 81);
+}
+.trashIcon:hover {
+  color: rgb(165, 33, 33);
+}
+.checkBoxComplete {
+  display: flex;
+  color: rgb(27, 79, 62);
+  font-weight: 800;
+}
+.completeBlock {
+  font-family: "Times New Roman", Times, serif;
+}
